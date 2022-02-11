@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!------------------ Icons------------------>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+<!----------------- fonts-------------------->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+	<title>My Personal Portfolio</title>
+</head>
+
+<body>
+	<section class="header">
+
+		<nav>
+
+			<div class="nav-links" id="navLinks">
+				<i class="bi bi-x-circle" onclick="hidemenu()"></i>
+		
+				<ul>
+					<li class="homebtn"><a href="home.html">HOME</a></li>
+			
+					<li class="aboutbtn"><a href="about.html">ABOUT</a></li>
+
+					<li class="contactbtn"><a href="contact.html">CONTACT US</a></li>
+				</ul>
+
+			</div>
+			
+			<i class="bi bi-list" onclick="openmenu()"></i>
+
+		</nav>
+
+		<div class="textbox">
+
+			<h1>CREATE</h1>
+			<p>Hi! Im Cheska. I am an IT student working on HTML, CSS, and various programming languages.<br>Let's work together!
+			</p><br>
+			<a href="contact.html" class= "morebtn">Tell me about your Project</a>
+			<br><br><br>
+
+
+	</section>
+	<!-- services -->
+	<section class ="services">
+			<h1 class ="servicetitle">Services Offered</h1>
+				
+				<div class= "row">
+					<div class= "servicecoloumn">
+						<h3>Web <br> Development</h3>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis porro odit quidem nemo ut. Et magnam sunt veniam earum cum voluptas deleniti doloremque impedit praesentium ad. Debitis pariatur impedit magni.</p>
+					</div>
+
+					<div class= "servicecoloumn">
+						<h3>Network Administration</h3>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis porro odit quidem nemo ut. Et magnam sunt veniam earum cum voluptas deleniti doloremque impedit praesentium ad. Debitis pariatur impedit magni.</p>
+					</div>
+
+					<div class= "servicecoloumn">
+						<h3>Computer System Analysis</h3>
+						<p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis porro odit quidem nemo ut. Et magnam sunt veniam earum cum voluptas deleniti doloremque impedit praesentium ad. Debitis pariatur impedit magnic.</p>	
+					</div>
+				</div>
+	</section>
+<!---------------Javascript for toggle menu------------------->
+	<script>
+		var navLinks = document.getElementById("navLinks");
+
+		function hidemenu(){
+			navLinks.style.right = "-200px";
+		}
+		function openmenu(){
+			navLinks.style.right ="0px";
+		}
+	
+	</script>
+	
+</body>
+</html>
